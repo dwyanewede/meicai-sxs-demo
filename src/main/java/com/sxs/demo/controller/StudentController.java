@@ -27,7 +27,7 @@ public class StudentController {
         return studentService.sayHello(number);
     }
     @PostMapping("/save")
-    public String save(@ModelAttribute Student student){
+    public String save(@RequestBody Student student){
         return studentService.save(student);
     }
 }
